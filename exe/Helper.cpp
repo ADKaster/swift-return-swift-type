@@ -1,7 +1,7 @@
-
 #include "Helper.h"
+#include <optional>
 
-swift::Optional<int> getValue() noexcept { return swift::Optional<int>::some(42); }
-swift::Optional<swift::String> getString() noexcept { return swift::Optional<swift::String>::none(); }
-swift::String getAString() noexcept { return swift::String("suh dude"); }
+std::optional<int> getValue() noexcept { return std::optional<int>(42); }
+std::optional<std::string> getString() noexcept { return std::nullopt; }
+std::string getAString() noexcept { return std::string("suh dude"); }
 

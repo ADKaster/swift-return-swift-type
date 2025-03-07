@@ -1,5 +1,5 @@
 
-add_executable(exe main.cpp Helper.cpp Helper.swift)
+add_executable(exe Helper.cpp Helper.swift)
 target_link_libraries(exe PUBLIC shlib)
 target_include_directories(exe PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
